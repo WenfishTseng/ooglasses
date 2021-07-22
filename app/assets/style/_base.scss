@@ -1,0 +1,35 @@
+@import "reset";
+@import "grid";
+
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 15px;
+
+    @include desktop {
+      max-width: 720px;
+    }
+
+    @include mobile568 {
+      max-width: 568px;
+    }
+    @include phone {
+      max-width: 375px;
+    }
+  }
+}

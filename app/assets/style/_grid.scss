@@ -1,0 +1,55 @@
+// pc - 1200px
+// desktop - 998px
+// iPad - 768px
+// iPad以下 - 767px
+// iPhone 6 Plus - 414px (視專案族群)
+// iPhone 6 - 375px (視專案族群)
+// iPhone 5、SE - 320px
+
+@mixin pc() {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (max-width: 998px) {
+    @content;
+  }
+}
+
+@mixin pad() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin pad-below() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile568() {
+  @media (max-width: 568px) {
+    @content;
+  }
+}
+
+@mixin phone-top() {
+  @media (max-width: 414px) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin phone-below() {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
