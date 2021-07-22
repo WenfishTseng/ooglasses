@@ -1,0 +1,1352 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CSS Reset End */
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif; }
+  body .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 15px; }
+    @media (max-width: 998px) {
+      body .container {
+        max-width: 720px; } }
+    @media (max-width: 568px) {
+      body .container {
+        max-width: 568px; } }
+    @media (max-width: 375px) {
+      body .container {
+        max-width: 375px; } }
+
+.py-m {
+  padding: 39px 0px; }
+  @media (max-width: 998px) {
+    .py-m {
+      padding: 32px 0px; } }
+  @media (max-width: 568px) {
+    .py-m {
+      padding: 24px 0px; } }
+
+.pt-l {
+  padding-top: 60px; }
+  @media (max-width: 998px) {
+    .pt-l {
+      padding-top: 40px; } }
+  @media (max-width: 568px) {
+    .pt-l {
+      padding-top: 32px; } }
+
+.pb-l {
+  padding-bottom: 60px; }
+  @media (max-width: 998px) {
+    .pb-l {
+      padding-bottom: 0px; } }
+  @media (max-width: 568px) {
+    .pb-l {
+      padding-bottom: 0px; } }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+header {
+  background: #aa0601; }
+  @media (max-width: 568px) {
+    header .container {
+      padding: 0px 0px !important; } }
+  header .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 568px) {
+      header .header {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    header .header .header__logo a {
+      display: block;
+      width: 80px;
+      height: 49px;
+      margin: 30px 0px;
+      background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-indent: 101%;
+      white-space: nowrap;
+      overflow: hidden; }
+      @media (max-width: 568px) {
+        header .header .header__logo a {
+          width: 48px;
+          height: 30px;
+          margin: 10px 0px; } }
+    header .header .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      @media (max-width: 568px) {
+        header .header .menu {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+      @media (max-width: 568px) {
+        header .header .menu li {
+          width: 50%;
+          border: 1px solid #fff;
+          text-align: center;
+          font-size: 20px;
+          line-height: 29px; } }
+      header .header .menu a {
+        padding: 0px 2rem;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        font-weight: 400; }
+        @media (max-width: 998px) {
+          header .header .menu a {
+            padding: 0px 1.25rem; } }
+        @media (max-width: 568px) {
+          header .header .menu a {
+            margin: 0.5rem 0px; } }
+      header .header .menu li:last-child a {
+        padding-right: 0px; }
+        @media (max-width: 998px) {
+          header .header .menu li:last-child a {
+            padding-right: 0px; } }
+        @media (max-width: 568px) {
+          header .header .menu li:last-child a {
+            padding: 0px 1.25rem; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CSS Reset End */
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif; }
+  body .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 15px; }
+    @media (max-width: 998px) {
+      body .container {
+        max-width: 720px; } }
+    @media (max-width: 568px) {
+      body .container {
+        max-width: 568px; } }
+    @media (max-width: 375px) {
+      body .container {
+        max-width: 375px; } }
+
+.py-m {
+  padding: 39px 0px; }
+  @media (max-width: 998px) {
+    .py-m {
+      padding: 32px 0px; } }
+  @media (max-width: 568px) {
+    .py-m {
+      padding: 24px 0px; } }
+
+.pt-l {
+  padding-top: 60px; }
+  @media (max-width: 998px) {
+    .pt-l {
+      padding-top: 40px; } }
+  @media (max-width: 568px) {
+    .pt-l {
+      padding-top: 32px; } }
+
+.pb-l {
+  padding-bottom: 60px; }
+  @media (max-width: 998px) {
+    .pb-l {
+      padding-bottom: 0px; } }
+  @media (max-width: 568px) {
+    .pb-l {
+      padding-bottom: 0px; } }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+footer {
+  background: #aa0601;
+  color: #fff; }
+  footer .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+    footer .header .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      @media (max-width: 568px) {
+        footer .header .menu {
+          display: none; } }
+      footer .header .menu a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 5px 24px; }
+        @media (max-width: 998px) {
+          footer .header .menu a {
+            padding: 5px 20px; } }
+      footer .header .menu li:first-child a {
+        padding: 5px 24px 5px 0px; }
+        @media (max-width: 998px) {
+          footer .header .menu li:first-child a {
+            padding: 5px 20px 5px 0px; } }
+    footer .header .socialMedia {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      @media (max-width: 568px) {
+        footer .header .socialMedia {
+          position: absolute;
+          right: 5%;
+          top: 0px; } }
+      footer .header .socialMedia a {
+        display: block;
+        margin: 0px 16px;
+        height: 48px;
+        width: 48px; }
+        @media (max-width: 998px) {
+          footer .header .socialMedia a {
+            margin: 0px 12px;
+            height: 24px;
+            width: 24px; } }
+        @media (max-width: 375px) {
+          footer .header .socialMedia a {
+            margin: 0px 8px; } }
+      footer .header .socialMedia li:last-child a {
+        margin: 0px 0px 0px 16px; }
+        @media (max-width: 998px) {
+          footer .header .socialMedia li:last-child a {
+            margin: 0px 0px 0px 12px; } }
+        @media (max-width: 375px) {
+          footer .header .socialMedia li:last-child a {
+            margin: 0px 0px 0px 8px; } }
+  footer .address {
+    margin-top: 36px;
+    margin-bottom: 24px; }
+    @media (max-width: 998px) {
+      footer .address {
+        margin-top: 18px;
+        margin-bottom: 20px; } }
+    @media (max-width: 568px) {
+      footer .address {
+        margin-top: 0;
+        margin-bottom: 24px; } }
+    footer .address__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-decoration: none;
+      color: #fff;
+      font-size: 36px;
+      line-height: 54px; }
+      @media (max-width: 998px) {
+        footer .address__item {
+          font-size: 20px;
+          line-height: 30px; } }
+      @media (max-width: 568px) {
+        footer .address__item {
+          font-size: 16px; } }
+      @media (max-width: 568px) {
+        footer .address__item {
+          font-size: 16px; } }
+      @media (max-width: 375px) {
+        footer .address__item {
+          font-size: 14px; } }
+    footer .address a[href^="mailto"]::before {
+      height: 32px;
+      width: 40px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-mail.svg);
+      content: " ";
+      display: inline-block;
+      margin-right: 16px; }
+      @media (max-width: 998px) {
+        footer .address a[href^="mailto"]::before {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px; } }
+      @media (max-width: 568px) {
+        footer .address a[href^="mailto"]::before {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px; } }
+    footer .address a[href^="tel"]::before {
+      height: 36px;
+      width: 36px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-phone.svg);
+      content: " ";
+      display: inline-block;
+      margin-right: 16px; }
+      @media (max-width: 998px) {
+        footer .address a[href^="tel"]::before {
+          width: 24px;
+          height: 24px;
+          margin-right: 8px; } }
+      @media (max-width: 568px) {
+        footer .address a[href^="tel"]::before {
+          width: 20px;
+          height: 20px;
+          margin-right: 5px; } }
+  footer .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 32px; }
+    @media (max-width: 998px) {
+      footer .footer {
+        margin-top: 24px; } }
+    @media (max-width: 568px) {
+      footer .footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        margin-top: 16px; } }
+    footer .footer small {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400; }
+    footer .footer .policy {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      @media (max-width: 568px) {
+        footer .footer .policy {
+          display: block; } }
+      footer .footer .policy a {
+        text-decoration: none;
+        display: block;
+        margin-left: 48px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400; }
+        @media (max-width: 768px) {
+          footer .footer .policy a {
+            margin-left: 24px; } }
+        @media (max-width: 568px) {
+          footer .footer .policy a {
+            margin-left: 0px;
+            padding-top: 8px; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CSS Reset End */
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif; }
+  body .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 15px; }
+    @media (max-width: 998px) {
+      body .container {
+        max-width: 720px; } }
+    @media (max-width: 568px) {
+      body .container {
+        max-width: 568px; } }
+    @media (max-width: 375px) {
+      body .container {
+        max-width: 375px; } }
+
+.py-m {
+  padding: 39px 0px; }
+  @media (max-width: 998px) {
+    .py-m {
+      padding: 32px 0px; } }
+  @media (max-width: 568px) {
+    .py-m {
+      padding: 24px 0px; } }
+
+.pt-l {
+  padding-top: 60px; }
+  @media (max-width: 998px) {
+    .pt-l {
+      padding-top: 40px; } }
+  @media (max-width: 568px) {
+    .pt-l {
+      padding-top: 32px; } }
+
+.pb-l {
+  padding-bottom: 60px; }
+  @media (max-width: 998px) {
+    .pb-l {
+      padding-bottom: 0px; } }
+  @media (max-width: 568px) {
+    .pb-l {
+      padding-bottom: 0px; } }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+main .banner {
+  height: 840px;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (max-width: 568px) {
+    main .banner {
+      height: 394px;
+      background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true); } }
+  main .banner .container {
+    color: #650300;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
+    main .banner .container .box {
+      min-width: 576px; }
+      @media (max-width: 998px) {
+        main .banner .container .box {
+          min-width: 432px; } }
+      @media (max-width: 568px) {
+        main .banner .container .box {
+          min-width: 288px; } }
+      main .banner .container .box h3 {
+        font-size: 36px;
+        line-height: 54px; }
+        @media (max-width: 998px) {
+          main .banner .container .box h3 {
+            font-size: 20px;
+            line-height: 30px; } }
+        @media (max-width: 568px) {
+          main .banner .container .box h3 {
+            font-size: 16px;
+            line-height: 30px; } }
+      main .banner .container .box h2 {
+        font-size: 68px;
+        line-height: 96px;
+        font-weight: bold; }
+        @media (max-width: 998px) {
+          main .banner .container .box h2 {
+            font-size: 48px;
+            line-height: 72px; } }
+        @media (max-width: 568px) {
+          main .banner .container .box h2 {
+            font-size: 32px;
+            line-height: 72px; } }
+
+main .feature {
+  background: #aa06010d; }
+  main .feature__title {
+    color: #650300;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    margin-bottom: 48px;
+    text-align: center; }
+    @media (max-width: 998px) {
+      main .feature__title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 40px; } }
+    @media (max-width: 568px) {
+      main .feature__title {
+        font-size: 24px;
+        line-height: 48px;
+        margin-bottom: 28px; } }
+  main .feature__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    main .feature__list li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 25%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 20px; }
+      @media (max-width: 998px) {
+        main .feature__list li {
+          width: 50%;
+          padding-right: 52.5px;
+          padding-left: 52.5px;
+          margin-bottom: 32px; } }
+      @media (max-width: 568px) {
+        main .feature__list li {
+          width: 100%;
+          padding-right: 45px;
+          padding-left: 45px;
+          margin-bottom: 56px; } }
+      main .feature__list li img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 16px; }
+      main .feature__list li h3 {
+        color: #650300;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 8px;
+        font-weight: bold; }
+      main .feature__list li p {
+        font-size: 16px;
+        line-height: 24px; }
+
+main .classic__title {
+  color: #650300;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: bold;
+  margin-bottom: 48px;
+  text-align: center; }
+  @media (max-width: 998px) {
+    main .classic__title {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 40px; } }
+  @media (max-width: 568px) {
+    main .classic__title {
+      font-size: 24px;
+      line-height: 48px;
+      margin-bottom: 28px; } }
+
+main .classic__list {
+  margin-bottom: 48px; }
+  @media (max-width: 568px) {
+    main .classic__list {
+      margin-bottom: 32px; } }
+
+main .classic__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  margin-bottom: 30px; }
+  @media (max-width: 998px) {
+    main .classic__item {
+      margin-bottom: 8px; } }
+  @media (max-width: 568px) {
+    main .classic__item {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      position: relative; } }
+  main .classic__item img {
+    width: 58%; }
+    @media (max-width: 998px) {
+      main .classic__item img {
+        width: 55%; } }
+    @media (max-width: 568px) {
+      main .classic__item img {
+        width: 100%; } }
+  main .classic__item h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 48px;
+    line-height: 72px;
+    color: #aa0601;
+    font-weight: bolder;
+    font-style: italic;
+    margin-left: 30px; }
+    @media (max-width: 998px) {
+      main .classic__item h3 {
+        font-size: 28px;
+        line-height: 72px;
+        margin-left: 20px; } }
+    @media (max-width: 568px) {
+      main .classic__item h3 {
+        position: absolute; } }
+    main .classic__item h3::before {
+      content: " ";
+      height: 48px;
+      width: 48px;
+      margin-right: 10px;
+      display: inline-block;
+      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-diamond.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      @media (max-width: 998px) {
+        main .classic__item h3::before {
+          font-size: 40px;
+          line-height: 40px;
+          margin-right: 8px; } }
+  main .classic__item .sun::before {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-sun.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  main .classic__item .functional::before {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week3/icon-thunder.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+main .classic .second_item {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  @media (max-width: 998px) {
+    main .classic .second_item {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  main .classic .second_item .sun {
+    margin-left: 0px;
+    margin-right: 30px; }
+    @media (max-width: 998px) {
+      main .classic .second_item .sun {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-left: 20px; } }
+
+main .coBranding {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto; }
+  main .coBranding__title {
+    color: #fff;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    margin-bottom: 48px;
+    text-align: center; }
+    @media (max-width: 998px) {
+      main .coBranding__title {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 40px; } }
+    @media (max-width: 568px) {
+      main .coBranding__title {
+        font-size: 24px;
+        line-height: 48px;
+        margin-bottom: 28px; } }
+  main .coBranding li {
+    width: 50%; }
+    @media (max-width: 568px) {
+      main .coBranding li {
+        width: 92%; } }
+  main .coBranding__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 80px; }
+    @media (max-width: 998px) {
+      main .coBranding__list {
+        padding-bottom: 56px; } }
+    @media (max-width: 568px) {
+      main .coBranding__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-bottom: 24px; } }
+  main .coBranding__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin: 0px 15px; }
+    @media (max-width: 568px) {
+      main .coBranding__item {
+        margin: 0px 0px 16px; } }
+    main .coBranding__item h3 {
+      position: absolute;
+      z-index: 10;
+      color: #aa0601;
+      font-size: 72px;
+      line-height: 102px;
+      font-weight: bold; }
+      @media (max-width: 998px) {
+        main .coBranding__item h3 {
+          font-size: 32px;
+          line-height: 25px; } }
+
+main .recommend__title {
+  color: #650300;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: bold;
+  margin-bottom: 48px;
+  text-align: center; }
+  @media (max-width: 998px) {
+    main .recommend__title {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 40px; } }
+  @media (max-width: 568px) {
+    main .recommend__title {
+      font-size: 24px;
+      line-height: 48px;
+      margin-bottom: 28px; } }
+
+main .recommend__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 80px; }
+  @media (max-width: 998px) {
+    main .recommend__list {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      margin-bottom: 24px; } }
+
+main .recommend__card {
+  width: 25%;
+  margin: 0px 15px;
+  -webkit-box-shadow: 0px 2px 6px #00000029;
+          box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #dee2e6;
+  border-radius: 4px; }
+  @media (max-width: 998px) {
+    main .recommend__card {
+      width: 45%;
+      margin: 0px 0px 32px;
+      padding: 0px; } }
+  @media (max-width: 568px) {
+    main .recommend__card {
+      width: 92%;
+      margin: 0px 0px 16px; } }
+  main .recommend__card img {
+    width: 100%; }
+  main .recommend__card__body {
+    height: 204px;
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  main .recommend__card__title {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 8px; }
+  main .recommend__card__text {
+    font-size: 16px;
+    line-height: 24px; }
+  main .recommend__card__footer {
+    font-size: 14px;
+    line-height: 21px;
+    color: #707070; }
+
+main .contact {
+  background: #aa06010d; }
+  main .contact .container {
+    width: 66%; }
+    @media (max-width: 568px) {
+      main .contact .container {
+        width: 100%; } }
+  main .contact__title {
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    text-align: center; }
+    @media (max-width: 998px) {
+      main .contact__title {
+        font-size: 32px;
+        line-height: 48px; } }
+    @media (max-width: 568px) {
+      main .contact__title {
+        font-size: 24px;
+        line-height: 48px;
+        margin-bottom: 20px; } }
+  main .contact__txt {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px; }
+    @media (max-width: 998px) {
+      main .contact__txt {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px; } }
+  main .contact__list {
+    padding-bottom: 56px; }
+  main .contact__item {
+    width: 100%; }
+    main .contact__item label {
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 8px;
+      margin-bottom: 4px; }
+      @media (max-width: 998px) {
+        main .contact__item label {
+          font-size: 14px;
+          line-height: 21px;
+          margin-bottom: 3px; } }
+    main .contact__item input {
+      width: 100%;
+      display: block;
+      background: transparent;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 12px 16px;
+      border: 1px solid #000000; }
+      main .contact__item input ::-webkit-input-placeholder {
+        color: #000000; }
+      main .contact__item input ::-moz-placeholder {
+        color: #000000; }
+      main .contact__item input :-ms-input-placeholder {
+        color: #000000; }
+      main .contact__item input ::-ms-input-placeholder {
+        color: #000000; }
+      main .contact__item input ::placeholder {
+        color: #000000; }
+    main .contact__item textarea {
+      width: 100%;
+      display: block;
+      height: 136px;
+      background: transparent;
+      font-size: 16px;
+      line-height: 24px;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      border: 1px solid #000000; }
+    main .contact__item button {
+      width: 33%;
+      background: #aa0601;
+      color: #fff;
+      padding: 10px 0px;
+      border: 0px;
+      font-size: 14px;
+      line-height: 21px;
+      margin-top: 20px; }
+      @media (max-width: 568px) {
+        main .contact__item button {
+          width: 50%;
+          padding: 8px 0px; } }
+    main .contact__item__checkbox {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      @media (max-width: 998px) {
+        main .contact__item__checkbox {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; } }
+      main .contact__item__checkbox input {
+        display: inline-block; }
+      main .contact__item__checkbox label {
+        display: inline-block; }
+
+/*# sourceMappingURL=all.css.map */
