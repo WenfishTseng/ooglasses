@@ -1354,4 +1354,283 @@ main .contact {
       main .contact__item__checkbox label {
         display: inline-block; }
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CSS Reset End */
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif; }
+  body .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 15px; }
+    @media (max-width: 998px) {
+      body .container {
+        max-width: 720px; } }
+    @media (max-width: 568px) {
+      body .container {
+        max-width: 568px; } }
+    @media (max-width: 375px) {
+      body .container {
+        max-width: 375px; } }
+
+.py-m {
+  padding: 39px 0px; }
+  @media (max-width: 998px) {
+    .py-m {
+      padding: 32px 0px; } }
+  @media (max-width: 568px) {
+    .py-m {
+      padding: 24px 0px; } }
+
+.pt-l {
+  padding-top: 60px; }
+  @media (max-width: 998px) {
+    .pt-l {
+      padding-top: 40px; } }
+  @media (max-width: 568px) {
+    .pt-l {
+      padding-top: 32px; } }
+
+.pb-l {
+  padding-bottom: 60px; }
+  @media (max-width: 998px) {
+    .pb-l {
+      padding-bottom: 0px; } }
+  @media (max-width: 568px) {
+    .pb-l {
+      padding-bottom: 0px; } }
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.product__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .product__menu li {
+    width: 33.33%; }
+
+.product__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 32px;
+  line-height: 50px;
+  padding: 27px 0px;
+  color: #000;
+  text-decoration: none;
+  text-align: center; }
+  @media (max-width: 998px) {
+    .product__item {
+      font-size: 24px;
+      padding: 14px 0px; } }
+  @media (max-width: 568px) {
+    .product__item {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 6px 0px; } }
+  @media (max-width: 375px) {
+    .product__item {
+      font-size: 12px;
+      line-height: 12px; } }
+  .product__item-active {
+    border-bottom: 8px solid #aa0601; }
+    @media (max-width: 568px) {
+      .product__item-active {
+        border-bottom: 4px solid #aa0601; } }
+  .product__item::before {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    display: inline-block;
+    content: " ";
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-diamond-black.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+    @media (max-width: 998px) {
+      .product__item::before {
+        width: 32px;
+        height: 32px; } }
+    @media (max-width: 568px) {
+      .product__item::before {
+        width: 14px;
+        height: 14px;
+        margin-right: 2px; } }
+    @media (max-width: 375px) {
+      .product__item::before {
+        width: 10px;
+        height: 10px; } }
+  .product__item__sun::before {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-sun-black.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .product__item__func::before {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-thunder-black.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+
+.product__banner .container {
+  max-width: 1920px;
+  padding: 0px 0px; }
+  .product__banner .container__item {
+    width: 50%; }
+    .product__banner .container__item img {
+      display: block; }
+
 /*# sourceMappingURL=all.css.map */
