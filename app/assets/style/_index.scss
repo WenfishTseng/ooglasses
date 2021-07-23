@@ -288,6 +288,8 @@ main {
       justify-content: center;
       align-items: center;
       position: relative;
+      background: #fff;
+      overflow: hidden;
       margin: 0px 15px;
       @include mobile568 {
         margin: 0px 0px 16px;
@@ -303,6 +305,10 @@ main {
           font-size: 32px;
           line-height: 25px;
         }
+      }
+      img {
+        width: 100%;
+        opacity: 0.5;
       }
     }
   }

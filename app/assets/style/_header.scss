@@ -51,17 +51,17 @@ header {
         }
       }
       a {
-        padding: 0px 2rem;
+        padding: 0px 32px;
         color: $white;
         text-decoration: none;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
+        font-size: 20px;
+        line-height: 24px;
         font-weight: 400;
         @include desktop {
-          padding: 0px 1.25rem;
+          padding: 0px 20px;
         }
         @include mobile568 {
-          margin: 0.5rem 0px;
+          margin: 8px 0px;
         }
       }
       li:last-child a {
@@ -70,7 +70,7 @@ header {
           padding-right: 0px;
         }
         @include mobile568 {
-          padding: 0px 1.25rem;
+          padding: 0px 20px;
         }
       }
     }
