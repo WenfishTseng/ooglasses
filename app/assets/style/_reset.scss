@@ -128,3 +128,15 @@ table {
   border-spacing: 0;
 }
 /* CSS Reset End */
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

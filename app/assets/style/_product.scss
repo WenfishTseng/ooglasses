@@ -1,0 +1,95 @@
+.product {
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: 33.33%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 50px;
+    padding: 27px 0px;
+    color: $black;
+    text-decoration: none;
+    text-align: center;
+    @include desktop {
+      font-size: 24px;
+      padding: 14px 0px;
+    }
+    @include mobile568 {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 6px 0px;
+    }
+    @include phone {
+      font-size: 12px;
+      line-height: 12px;
+    }
+
+    &-active {
+      border-bottom: 8px solid $primary;
+      @include mobile568 {
+        border-bottom: 4px solid $primary;
+      }
+    }
+    &::before {
+      width: 44px;
+      height: 44px;
+      margin-right: 10px;
+      display: inline-block;
+      content: " ";
+      background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-diamond-black.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      @include desktop {
+        width: 32px;
+        height: 32px;
+      }
+      @include mobile568 {
+        width: 14px;
+        height: 14px;
+        margin-right: 2px;
+      }
+      @include phone {
+        width: 10px;
+        height: 10px;
+      }
+    }
+    &__sun {
+      &::before {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-sun-black.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+    &__func {
+      &::before {
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/102c91f7b3d8e08005073f54b3283b09a18dc427/week4/icon-thunder-black.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+  }
+
+  &__banner {
+    .container {
+      max-width: 1920px;
+      padding: 0px 0px;
+      &__item {
+        width: 50%;
+
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+}
