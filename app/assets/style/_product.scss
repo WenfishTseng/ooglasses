@@ -139,10 +139,14 @@
         justify-content: center;
       }
     }
+
     &__item {
       width: 25%;
       padding: 0px 15px;
       margin-bottom: 104px;
+      &-sun {
+        width: 33%;
+      }
       @include desktop {
         width: 50%;
         margin-bottom: 72px;
